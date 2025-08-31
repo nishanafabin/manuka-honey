@@ -1,0 +1,182 @@
+.product-info {
+  font-family: Arial, sans-serif;
+  
+  margin:0px;
+  background-color: #FBF9F6;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.reward-points {
+  margin-bottom: 20px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+
+}
+.colourclub-logo{
+    margin-top: -9px;
+}
+.reward-points .points {
+  color: #F39C12;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: Segoe UI;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+line-height: 23.94px;
+letter-spacing: 0%;
+vertical-align: middle;
+text-align: center;
+
+
+}
+
+.delivery-info {
+  margin-bottom: 20px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  font-weight: 50;
+  font-style: normal;
+  gap: 50px;
+  
+
+}
+.taste-profile {
+  
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 50;
+  font-style: normal;
+  
+
+
+}
+.umf-scale{
+    margin-bottom: 20px;
+    font-size: 15px;
+    
+    font-weight: 50;
+    font-style: normal;
+}
+.afterpay-info{
+
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 50;
+  font-style: normal;
+  justify-content: center;
+  
+}
+
+.afterpay-name {
+  color: #000000;
+  font-weight: 600;
+  
+  
+}
+.Info-2{
+    margin-top: -10px;
+    font-size: 20px;
+    
+}
+.umf-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.afterpay-icon{
+    background-color: #00D633;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    padding-left: 5px;
+    text-align: center;
+}
+.icon-2{
+
+    margin-top: 200px;
+}
+.umf-button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.umf-button:hover {
+  border-color: #a35fd3;
+  background-color: #f9f0ff;
+}
+
+.umf-button.active {
+  border-color: purple;
+  background-color: #f3e8ff;
+}
+
+.taste-profile .slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background: #ddd;
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: purple;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: purple;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+.orange1 { border-bottom: solid 2px #e67e22; color: #313131; }
+.red1 { border-bottom: solid 2px #c0392b; color: #313131; }
+.pink1 { border-bottom: solid 2px #d46a9f; color: #313131; }
+.purple1 { border-bottom: solid 4px #6c3483; color: #6c3483; }
+.blue1 { border-bottom: solid 2px #2980b9; color: #313131; }
+.green1 { border-bottom: solid 2px #27ae60; color: #313131; }
+.navy1 { border-bottom: solid 2px #2c3e50; color: #313131; }
+
+.rating-scale1{
+    font-weight: 100;
+    display: flex;
+  margin-bottom: 10px;
+  overflow: hidden;
+  gap: 4px;
+  font-style:normal ;
+}
+.labels{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.span-info{
+    display: block;
+    margin-top: 10px !important;
+}

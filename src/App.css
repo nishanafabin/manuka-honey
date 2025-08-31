@@ -1,0 +1,66 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.App {
+  
+  background-color: #FBF9F6;
+  padding: 0 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-layout {
+  display: flex;
+  width: 100%;
+   /* keeps it centered */
+  gap: 30px;
+}
+
+/* Left side (SliderGrid) → 1/3 width */
+.product-layout > :first-child {
+  flex: 2;
+  max-width: 50%;
+}
+
+/* Right side (ProductDetails) → 2/3 width */
+.product-layout > :last-child {
+  flex: 2;
+  max-width: 50%;
+}
+.position-relative {
+  position: relative;
+}
+.text-center {
+  text-align: center;
+}
+.m-0{
+  margin: 0;
+}
+.p-0{
+  padding: 0;
+}
+/* ✅ Mobile view: stack vertically */
+@media (max-width: 768px) {
+  .product-layout {
+    flex-direction: column; /* stack instead of side by side */
+    gap: 20px;
+  }
+
+  .product-layout > :first-child,
+  .product-layout > :last-child {
+    flex: none;
+    max-width: 100%; /* full width */
+  }
+}

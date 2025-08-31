@@ -1,0 +1,36 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  width: 100%;         
+  margin: 0 auto;     
+  padding: 0px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.image-grid .full {
+  grid-column: span 2;
+}
+
+
+@media (max-width: 992px) {
+  .image-grid {
+    width: 50%;   
+  }
+}
+
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+    width: 90%;   
+  }
+  .image-grid .full {
+    grid-column: span 1;
+  }
+}

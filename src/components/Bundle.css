@@ -1,0 +1,151 @@
+.bundle-conatiner {
+  background-color: #F2F2F2;
+  max-width: 100%;
+  
+  border-radius: 24px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.bundle-header {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.bundle-header svg {
+  vertical-align: middle;
+}
+
+.bundle-heder-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.rotate-head {
+  transform: rotate(180deg);
+}
+
+.bundle-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.middle-product {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.plus {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 5px;
+  align-self: center;
+}
+
+.span1 {
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 15px;
+}
+.span2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 15px;
+}
+.span3 {
+  color: #09801A;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.bundle-button {
+  background: #313131;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease;
+  font-family: Segoe UI;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #fff;
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+}
+.dropdown li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+}
+.dropdown li a:hover,
+.dropdown li a:focus {
+  background-color: #f3f3f3;
+}
+
+/* 📱 Small phone only */
+@media (max-width: 480px) {
+  .bundle-conatiner {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .bundle-header {
+    font-size: 16px;
+  }
+
+  .bundle-heder-text {
+    font-size: 1rem;
+  }
+
+  .bundle-products {
+    flex-direction: column; /* ✅ only small phones stack */
+    gap: 15px;
+  }
+
+  .plus {
+    margin: 0;
+  }
+
+  .span1,
+  .span2,
+  .span3 {
+    font-size: 12px;
+  }
+
+  .bundle-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .dropdown {
+    width: 90%; /* ✅ dropdown fits mobile width */
+  }
+}
